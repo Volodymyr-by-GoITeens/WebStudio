@@ -1,0 +1,37 @@
+.nav {
+    color: #212121;
+}
+footer {
+    background-color: rgba(47, 48, 58, 1);
+}
+.hat {
+    background-color: rgba(47, 48, 58, 1);
+}
+p {
+    color: rgba(117, 117, 117, 1);
+}
+h3 {
+    color: rgba(33, 33, 33, 1);
+}
+h1 {
+    color: #FFFFFF;
+}
+button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+h2 {
+    color: #212121;
+}
+.team {
+    background-color: #F5F4FA;
+}
+.address {
+    color: #FFFFFF;
+}
+.vault_id {
+    color: rgba(255, 255, 255, 0.6);
+}
+.head_id {
+    color: #757575;
+}
