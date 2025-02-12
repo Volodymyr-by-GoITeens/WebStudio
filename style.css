@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --footer-color: rgba(47, 48, 58, 1);
     --p-color: rgba(117, 117, 117, 1);
@@ -7,6 +9,11 @@
     --button-after-h1-background-color: #2196F3;
     --first-section-background-color: #2F303A;
     --mail-and-phone-color: #757575;
+    --main-style: "Roboto", serif;
+    --icon-style: "Raleway", serif;
+}
+body {
+    font-family: var(--main-style);
 }
 footer {
     background-color: rgba(47, 48, 58, 1);
