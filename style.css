@@ -3,14 +3,18 @@
 :root{
     --footer-color: rgba(47, 48, 58, 1);
     --p-color: rgba(117, 117, 117, 1);
-    --h1-and-address-and-nav-and-button-after-h1-color: white;
     --button-and-address-color: #212121;
-    --button-and-section-background-color: #F5F4FA;
-    --button-after-h1-background-color: #2196F3;
-    --first-section-background-color: #2F303A;
+    --button-background-color: #F5F4FA;
+    --active-button-background-color: #2196F3;
+    --section1-background-color: #2F303A;
     --mail-and-phone-color: #757575;
     --main-style: "Roboto", serif;
     --icon-style: "Raleway", serif;
+    --section-background-color: #F5F4FA;
+    --h1-color: white;
+    --adress-color: white;
+    --nav-color: white;
+    --active-button-color: white;
 }
 body {
     font-family: var(--main-style);
