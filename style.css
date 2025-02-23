@@ -46,3 +46,34 @@ nav ul li a {
 section:nth-child(4), button {
     background-color: #F5F4FA;
 }
+/*container*/
+/*nav*/
+div.container:nth-child(1) {
+    margin-top: 0;
+    margin-bottom: 200px;
+}
+/*Шапка*/
+div.container:nth-child(2) {
+    margin-top: 200px;
+    margin-bottom: 294px;
+}
+/*Особливості*/
+div.container:nth-child(3) {
+    margin-top: 294px;
+    margin-bottom: 94px;
+}
+/*Чим ми займаємося*/
+div.container:nth-child(4) {
+    margin-top: 94px;
+    margin-bottom: 188px;
+}
+/*Наша команда*/
+div.container:nth-child(5) {
+    margin-top: 188px;
+    margin-bottom: 154px;
+}
+/*footer*/
+div.container:nth-child(6) {
+    margin-top: 154px;
+    margin-bottom: 0;
+}
