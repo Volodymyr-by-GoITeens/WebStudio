@@ -34,8 +34,8 @@ h2, h3, button, nav ul li a {
 h1 + button {
     background-color: #2196F3;
 }
-main > section:nth-child(1){
-    background-color: #2F303A;
+main.main section.hat {
+    background-color: var(--section1-background-color);
 }
 a[href="mailto:info@devstudio.com"], a[href="tel:+380961111111"] {
     color: #757575;
@@ -76,4 +76,15 @@ div.container:nth-child(5) {
 div.container:nth-child(6) {
     margin-top: 154px;
     margin-bottom: 0;
+}
+/*flex-box*/
+main.main section.projekts div.container ul.filters {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+main.main section.projekts div.container ul.projekts_list {
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
 }
