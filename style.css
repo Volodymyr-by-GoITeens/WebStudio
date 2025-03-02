@@ -88,3 +88,30 @@ main.main section.projekts div.container ul.projekts_list {
     align-content: center;
     flex-flow: row wrap;
 }
+header.header > div.container {
+    display: flex;
+    flex-direction: row;
+}
+main.main > section.hat > div.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main.main > section.special > div.container {
+    display: flex;
+    flex-direction: row;
+}
+main.main > section.tasks > div.container {
+    display: flex;
+    flex-direction: row;
+}
+main.main > section.team > div.container {
+    display: flex;
+    flex-direction: row;
+}
+footer.footer > div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
