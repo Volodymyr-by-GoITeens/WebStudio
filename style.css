@@ -3,18 +3,19 @@
 :root{
     --footer-color: rgba(47, 48, 58, 1);
     --p-color: rgba(117, 117, 117, 1);
-    --button-and-address-color: #212121;
+    --button-color: #212121;
     --button-background-color: #F5F4FA;
-    --active-button-background-color: #2196F3;
-    --section1-background-color: #2F303A;
+    --active_button-background-color: #2196F3;
+    --hat_section-background-color: #2F303A;
     --mail-and-phone-color: #757575;
-    --main-style: "Roboto", serif;
-    --icon-style: "Raleway", serif;
-    --section-background-color: #F5F4FA;
+    --main-font: "Roboto", serif;
+    --icon-font: "Raleway", serif;
+    --team_section-background-color: #F5F4FA;
     --h1-color: white;
     --adress-color: white;
     --nav-color: white;
-    --active-button-color: white;
+    --active_button-color: white;
+    --address-color: #212121;
 }
 body {
     font-family: var(--main-style);
@@ -34,50 +35,97 @@ h2, h3, button, nav ul li a {
 h1 + button {
     background-color: #2196F3;
 }
+h1, h2, h3 {
+    text-align: center;
+}
 main.main section.hat {
     background-color: var(--section1-background-color);
 }
 a[href="mailto:info@devstudio.com"], a[href="tel:+380961111111"] {
     color: #757575;
 }
-nav ul li a {
+a[href="mailto:info@devstudio.com"]:hover, a[href="tel:+380961111111"]:hover {
+    color: #2196F3;
+}
+a.logo {
+    color: #2196F3;
+}
+header.header a.logo span {
     color: #212121;
+}
+footer.footer a.logo span {
+    color: #FFFFFF;
+}
+nav > ul > li > a {
+    color: #212121;
+}
+nav > ul > li > a:hover {
+    color: #2196F3;
 }
 section:nth-child(4), button {
     background-color: #F5F4FA;
 }
+h1.heading {
+    width: 696px;
+    font-weight: 900;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+ul {
+	list-style: none;
+}
+section.team div.container ul.list li {
+    width: 270px;
+    height: 368px;
+}
 /*container*/
 /*nav*/
-div.container:nth-child(1) {
+header.header div.container {
     margin-top: 0;
-    margin-bottom: 200px;
+    margin-bottom: 0;
 }
 /*Шапка*/
-div.container:nth-child(2) {
-    margin-top: 200px;
-    margin-bottom: 294px;
+section.hat div.container {
+    margin-top: 0;
+    margin-bottom: 94px;
 }
 /*Особливості*/
-div.container:nth-child(3) {
-    margin-top: 294px;
+section.special div.container {
+    margin-top: 94px;
     margin-bottom: 94px;
 }
 /*Чим ми займаємося*/
-div.container:nth-child(4) {
+section.tasks div.container {
     margin-top: 94px;
-    margin-bottom: 188px;
+    margin-bottom: 94px;
 }
 /*Наша команда*/
-div.container:nth-child(5) {
-    margin-top: 188px;
-    margin-bottom: 154px;
-}
-/*footer*/
-div.container:nth-child(6) {
-    margin-top: 154px;
+section.team div.container {
+    margin-top: 94px;
     margin-bottom: 0;
 }
+/*footer*/
+footer.footer div.container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*projekts*/
+main.main section.projekts div.container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div.container {
+    display: flex;
+    max-width: 1170px;
+    justify-content: center;
+    margin: 0 215px;
+}
 /*flex-box*/
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 main.main section.projekts div.container ul.filters {
     display: flex;
     justify-content: center;
@@ -92,26 +140,56 @@ header.header > div.container {
     display: flex;
     flex-direction: row;
 }
-main.main > section.hat > div.container {
+main.main section.hat div.container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 main.main > section.special > div.container {
     display: flex;
-    flex-direction: row;
 }
 main.main > section.tasks > div.container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 main.main > section.team > div.container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 1170px;
 }
 footer.footer > div.container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+nav > ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+section.tasks div.container ul.images {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+section.team div.container ul {
+    display: flex;
+    flex-direction: row;
+}
+section.team div.container ul li img {
+    max-width: 270px;
+    max-height: 260px;
+}
+section.special div.container ul {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
 }
