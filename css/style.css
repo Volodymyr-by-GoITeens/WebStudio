@@ -17,7 +17,7 @@
     --active_button-color: white;
     --address-color: #212121;
 }
-body {
+* {
     font-family: var(--main-style);
 }
 footer {
@@ -39,7 +39,7 @@ h1, h2, h3 {
     text-align: center;
 }
 main.main section.hat {
-    background-color: var(--section1-background-color);
+    background-color: var(--hat_section-background-color);
 }
 a[href="mailto:info@devstudio.com"], a[href="tel:+380961111111"] {
     color: #757575;
