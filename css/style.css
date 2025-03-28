@@ -5,16 +5,16 @@
     --p-color: rgba(117, 117, 117, 1);
     --button-color: #212121;
     --button-background-color: #F5F4FA;
-    --active_button-background-color: #2196F3;
-    --hat_section-background-color: #2F303A;
-    --mail-and-phone-color: #757575;
+    --button-active-bg--color: #2196F3;
+    --hero-section-bg-color: #2F303A;
+    --contact-text-color: #757575;
     --main-font: "Roboto", serif;
     --icon-font: "Raleway", serif;
     --team_section-background-color: #F5F4FA;
-    --h1-color: white;
+    --main-title-color: white;
     --adress-color: white;
     --nav-color: white;
-    --active_button-color: white;
+    --button-active-color: white;
     --address-color: #212121;
 }
 * {
@@ -47,6 +47,7 @@ a[href="mailto:info@devstudio.com"], a[href="tel:+380961111111"] {
 a[href="mailto:info@devstudio.com"]:hover, a[href="tel:+380961111111"]:hover {
     color: #2196F3;
 }
+/*Logo*/
 a.logo {
     color: #2196F3;
 }
@@ -59,13 +60,16 @@ footer.footer a.logo span {
 nav > ul > li > a {
     color: #212121;
 }
-nav > ul > li > a:hover {
+nav > ul > li > a:active {
     color: #2196F3;
 }
-section:nth-child(4), button {
+.team{
     background-color: #F5F4FA;
 }
-h1.heading {
+button {
+    background-color: #F5F4FA;
+}
+.hat-heading {
     width: 696px;
     font-weight: 900;
     margin-top: 200px;
@@ -79,13 +83,11 @@ section.team div.container ul.list li {
     height: 368px;
 }
 /*container*/
-/*nav*/
-header.header div.container {
+/*nav*/.header-container {
     margin-top: 0;
     margin-bottom: 0;
 }
-/*Шапка*/
-section.hat div.container {
+/*Шапка*/.hat-container {
     margin-top: 0;
     margin-bottom: 94px;
 }
