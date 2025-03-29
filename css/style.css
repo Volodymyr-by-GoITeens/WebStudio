@@ -121,7 +121,8 @@ section div, .header-container, .footer-container {
     display: flex;
     max-width: 1170px;
     justify-content: center;
-    margin: 0 215px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 /*flex-box*/
 body {
