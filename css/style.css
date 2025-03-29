@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --footer-color: rgba(47, 48, 58, 1);
-    --p-color: rgba(117, 117, 117, 1);
+    --footer-bg-color: rgba(47, 48, 58, 1);
+    --text-color: rgba(117, 117, 117, 1);
     --button-color: #212121;
     --button-background-color: #F5F4FA;
     --button-active-bg--color: #2196F3;
@@ -10,66 +10,67 @@
     --contact-text-color: #757575;
     --main-font: "Roboto", serif;
     --icon-font: "Raleway", serif;
-    --team_section-background-color: #F5F4FA;
+    --team-background-color: #F5F4FA;
     --main-title-color: white;
     --adress-color: white;
     --nav-color: white;
-    --button-active-color: white;
+    --button-active-color: #F5F4FA;
     --address-color: #212121;
+    --link-active-color: #2196F3;
 }
 * {
     font-family: var(--main-style);
 }
 footer {
-    background-color: rgba(47, 48, 58, 1);
+    background-color: var(--footer-bg-color);
+}
+.hero {
+    background-color: var(--hero-section-bg-color);
 }
 p {
-    color: rgba(117, 117, 117, 1);
+    color: var(--text-color);
 }
-h1, address ul li, nav ul li a, h1 + button {
-    color: #FFFFFF;
+.hero-heading, .footer-item, .header-link, .hero-button-active {
+    color: var(--main-title-color);
 }
-h2, h3, button, nav ul li a {
+h2, h3, button, .header-link {
     color: #212121;
 }
-h1 + button {
-    background-color: #2196F3;
+.hero-button-active {
+    background-color: var(--button-active-bg--color);
 }
 h1, h2, h3 {
     text-align: center;
 }
-main.main section.hat {
-    background-color: var(--hat_section-background-color);
+.header-email, .header-tel, .footer-email, .footer-tel {
+    color: var(--contact-text-color);
 }
-a[href="mailto:info@devstudio.com"], a[href="tel:+380961111111"] {
-    color: #757575;
-}
-a[href="mailto:info@devstudio.com"]:hover, a[href="tel:+380961111111"]:hover {
-    color: #2196F3;
+.header-email:active, .header-tel:active, .footer-email:active, .footer-tel:active {
+    color: var(--link-active-color);
 }
 /*Logo*/
 a.logo {
-    color: #2196F3;
+    color: var(--link-active-color);
 }
-header.header a.logo span {
-    color: #212121;
+.header-logo-span {
+    color: var(--button-color);
 }
-footer.footer a.logo span {
-    color: #FFFFFF;
+.footer-logo-span {
+    color: var(--main-title-color);
 }
-nav > ul > li > a {
-    color: #212121;
+.header-link {
+    color: var(--address-color);
 }
-nav > ul > li > a:active {
-    color: #2196F3;
+.header-link:active {
+    color: var(--link-active-color);
 }
 .team{
-    background-color: #F5F4FA;
+    background-color: var(--team-background-color);
 }
 button {
-    background-color: #F5F4FA;
+    background-color: var(--button-background-color);
 }
-.hat-heading {
+.hero-heading {
     width: 696px;
     font-weight: 900;
     margin-top: 200px;
@@ -78,7 +79,7 @@ button {
 ul {
 	list-style: none;
 }
-section.team div.container ul.list li {
+.team-item {
     width: 270px;
     height: 368px;
 }
@@ -87,36 +88,36 @@ section.team div.container ul.list li {
     margin-top: 0;
     margin-bottom: 0;
 }
-/*Шапка*/.hat-container {
+/*Шапка*/.hero-container {
     margin-top: 0;
     margin-bottom: 94px;
 }
 /*Особливості*/
-section.special div.container {
+.-special-container {
     margin-top: 94px;
     margin-bottom: 94px;
 }
 /*Чим ми займаємося*/
-section.tasks div.container {
+.tasks-container {
     margin-top: 94px;
     margin-bottom: 94px;
 }
 /*Наша команда*/
-section.team div.container {
+.team-container {
     margin-top: 94px;
     margin-bottom: 0;
 }
 /*footer*/
-footer.footer div.container {
+.footer-container {
     margin-top: 0;
     margin-bottom: 0;
 }
 /*projekts*/
-main.main section.projekts div.container {
+.projekts-container {
     margin-top: 0;
     margin-bottom: 0;
 }
-div.container {
+section div, .header-container, .footer-container {
     display: flex;
     max-width: 1170px;
     justify-content: center;
@@ -128,69 +129,70 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-main.main section.projekts div.container ul.filters {
+.filters {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-main.main section.projekts div.container ul.projekts_list {
+.projekts-list {
     display: flex;
     align-content: center;
     flex-flow: row wrap;
 }
-header.header > div.container {
+
+.header-container {
     display: flex;
     flex-direction: row;
 }
-main.main section.hat div.container {
+.hero-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-main.main > section.special > div.container {
+.special-container {
     display: flex;
 }
-main.main > section.tasks > div.container {
+.tasks-container {
     display: flex;
     flex-direction: column;
 }
-main.main > section.team > div.container {
+.team-container {
     display: flex;
     flex-direction: column;
     max-width: 1170px;
 }
-footer.footer > div.container {
+.footer-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-nav > ul {
+.header-nav-list {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 50px;
 }
-header ul {
+.header-address {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 50px;
 }
-section.tasks div.container ul.images {
+.tasks-list {
     display: flex;
     gap: 30px;
     flex-direction: row;
 }
-section.team div.container ul {
+.team-list {
     display: flex;
     flex-direction: row;
 }
-section.team div.container ul li img {
+.team-img {
     max-width: 270px;
     max-height: 260px;
 }
-section.special div.container ul {
+.special-list {
     display: flex;
     gap: 30px;
     flex-direction: row;
