@@ -36,20 +36,15 @@ body {
     color: var(--button-active-color);
     background-color: var(--button-active-bg-color);
 }
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 /*header*/
 header {
     border: 1px var(--header-border) solid;
-    max-height: 80px;
-}
-.header-container {
-    display: flex;
-    max-width: 1170px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: 32px auto;
-    padding: 0 auto;
     max-height: 80px;
 }
 .header-logo {
@@ -59,7 +54,6 @@ header {
     font-size: 26px;
     line-height: 100%;
     letter-spacing: 3%;
-
 }
 .header-logo-span {
     color: var(--title-color);
@@ -77,7 +71,6 @@ header {
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 2%;
-
 }
 .header-link:active {
     color: var(--link-active-color);
@@ -95,7 +88,6 @@ header {
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 2%;
-
 }
 .header-contact:active {
     color: var(--link-active-color);
@@ -110,16 +102,6 @@ header {
     background-repeat: no-repeat;
     height: 600px;
 }
-.hero-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1170px;
-    height: 600px;
-    margin: 0 auto 94px;
-    padding: 0 auto;
-}
 .hero-title {
     width: 696px;
     margin: 200px 0 30px;
@@ -133,7 +115,6 @@ header {
     letter-spacing: 6%;
     text-align: center;
     text-transform: uppercase;
-    
 }
 .hero-button {
     background-color: var(--button-active-bg-color);
@@ -150,17 +131,9 @@ header {
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-
 }
 
 /*special*/
-.special-container {
-    display: flex;
-    max-width: 1170px;
-    justify-content: center;
-    margin: 94px auto;
-    padding: 0 auto;
-}
 .special-list {
     display: flex;
     gap: 30px;
@@ -196,11 +169,6 @@ header {
 .tasks {
     display: block;
 }
-.tasks-container {
-    display: flex;
-    flex-direction: column;
-    margin: 94px 215px;
-}
 .tasks-headline {
     font-family: var(--main-font);
     font-weight: 700;
@@ -219,14 +187,6 @@ header {
 /*team*/
 .team {
     background-color: var(--team-bg-color);
-}
-.team-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1170px;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 auto;
 }
 .team-headline {
     font-family: var(--main-font);
@@ -275,15 +235,6 @@ header {
     color: var(--text-color);  
 }
 /*projekts*/
-.projekts-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1170px;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 auto;
-}
 .projekts-filters-list {
     display: flex;
     gap: 8px;
@@ -319,13 +270,6 @@ header {
 /*footer*/
 footer {
     background-color: var(--footer-bg-color);
-}
-.footer-container {
-    display: flex;
-    max-width: 1170px;
-    justify-content: left;
-    margin: 0 auto;
-    padding: 0 auto;
 }
 .footer-logo {
     color: var(--link-active-color);
