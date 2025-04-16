@@ -45,10 +45,7 @@ body {
 /*header*/
 header {
     border: 1px var(--header-border) solid;
-    max-height: 80px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 24px auto 25px;
+    padding: 24px 0 25px;
 }
 .header-logo {
     color: var(--active-color);
@@ -101,12 +98,9 @@ header {
     background-color: var(--hero-bg-color);
     background-image: url(../images/index/teamwork.jpg);
     background-image: linear-gradient(top to bottom, #2F303A66);
-    background-size: contain, ;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 600px;
-    margin-top: 0;
-    margin-bottom: 94px;
-    padding: 200px;
+    padding: 200px 0;
 }
 .hero-title {
     width: 696px;
@@ -141,8 +135,6 @@ header {
 
 /*special*/
 .special {
-    margin-top: 94px;
-    margin-bottom: 94px;
     padding: 0;
 }
 .special-list {
@@ -201,9 +193,7 @@ header {
 /*team*/
 .team {
     background-color: var(--team-bg-color);
-    margin-top: 94px;
-    margin-bottom: 0;
-    padding: 94px auto 94px;
+    padding: 94px 0 94px;
 }
 .team-headline {
     font-family: var(--main-font);
@@ -256,9 +246,7 @@ header {
     display: flex;
     gap: 8px;
     flex-direction: row;
-    margin-top: 94px;
-    margin-bottom: 94px;
-    padding: 0 auto;
+    padding: 0;
 }
 .projekts-button {
     background-color: var(--button-background-color);
@@ -290,9 +278,7 @@ header {
 /*footer*/
 footer {
     background-color: var(--footer-bg-color);
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 60px auto 60px;
+    padding: 60px 0;
 }
 .footer-logo {
     color: var(--link-active-color);
