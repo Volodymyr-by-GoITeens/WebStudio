@@ -275,6 +275,11 @@ header {
 .projekts-link {
     cursor: default;
 }
+.projekts-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 .projekts-subtitle {
     text-align: left;
     color: var(--title-color);
