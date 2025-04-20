@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--nav-->
+
+    <!--header-->
     <header class="header">
         <div class="container">
             <a class="header-logo" href="index.html">Web<span class="header-logo-span">Studio</span></a>
@@ -18,7 +19,7 @@
                         <a class="header-link" href="index.html">Студія</a>
                     </li>
                     <li class="header-item">
-                        <a class="header-link active-website" href="portfolio.html">Портфоліо</a>
+                        <a class="header-link" href="portfolio.html">Портфоліо</a>
                     </li>
                     <li class="header-item">
                         <a class="header-link" href="#">Контакти</a>
@@ -35,13 +36,15 @@
             </ul>
         </div>
     </header>
+
     <main class="main">
+
         <!--Кнопці-->
         <section class="projekts">
-            <div class="container">
+            <div class="container projekts-container">
                 <ul class="projekts-filters-list">
                     <li class="projekts-filter-item">
-                        <button class="projekts-button active-button" type="button">Усі</button>
+                        <button class="projekts-button projekts-active-button" type="button">Усі</button>
                     </li>
                     <li class="projekts-filter-item">
                         <button class="projekts-button" type="button">Веб-сайти</button>
@@ -56,8 +59,10 @@
                         <button class="projekts-button" type="button">Маркетинг</button>
                     </li>
                 </ul>
+
                 <!--Проєкти-->
                 <ul class="projekts-list">
+
                     <!--Технокряк-->
                     <li  class="projekts-item">
                         <a class="projekts-link" href="">
@@ -66,6 +71,7 @@
                             <p class="projekts-filter">Веб-сайт</p>
                         </a>
                     </li>
+
                     <!--Постер New Orlean vs Golden Star-->
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
@@ -74,6 +80,7 @@
                             <p class="projekts-filter">Дизайн</p>
                         </a>
                     </li>
+
                     <!--Ресторан Seafood-->
                     <li class="projekts-item">
                          <a class="projekts-item_link" href="">
@@ -82,6 +89,7 @@
                             <p class="projekts-filter">Додаток</p>
                         </a>
                     </li>
+
                     <!--Проєкт Prime-->
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
@@ -90,6 +98,7 @@
                             <p class="projekts-filter">Маркетинг</p>
                         </a>
                     </li>
+                    
                     <!--Проєкт Boxes-->
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
@@ -98,6 +107,7 @@
                             <p class="projekts-filter">Додаток</p>
                         </a>
                     </li>
+
                     <!--Inspiration has no Borders-->
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
@@ -106,6 +116,7 @@
                             <p class="projekts-filter">Веб-сайт</p>
                         </a>
                     </li>
+
                     <!--Видання Limited Edition-->
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
@@ -114,6 +125,7 @@
                             <p class="projekts-filter">Дизайн</p>
                         </a>
                     </li>
+
                     <!--Проєкт LAB-->
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
@@ -122,6 +134,7 @@
                             <p class="projekts-filter">Маркетинг</p>
                         </a>
                     </li>
+
                     <!--Growing Business-->
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
@@ -134,6 +147,7 @@
             </div>
         </section>
     </main>
+
     <!--Підвал-->
     <footer class="footer">
         <div class="container">
@@ -153,5 +167,6 @@
             </address>
         </div>
     </footer>
+    
 </body>
 </html>

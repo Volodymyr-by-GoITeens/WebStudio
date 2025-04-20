@@ -22,12 +22,9 @@
     --logo-font: "Raleway", serif;
 }
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    font-family: var(--main-style);
     display: block;
-    justify-content: center;
-    flex-direction: column;
 }
 .active-website {
     color: var(--active-color);
@@ -98,7 +95,7 @@ header {
     background-color: var(--hero-bg-color);
     background-image: url(../images/index/teamwork.jpg);
     background-image: linear-gradient(top to bottom, #2F303A66);
-    background-size: contain;
+    background-position: contain;
     background-repeat: no-repeat;
     padding: 200px 0;
 }
@@ -248,21 +245,27 @@ header {
     flex-direction: row;
     padding: 0;
 }
-.projekts-button {
-    background-color: var(--button-background-color);
+.projekts-active-button{
+    background-color: var(--button-active-bg-color);
+    color: var(--button-active-color);
 }
 .projekts-button:active {
     background-color: var(--button-active-bg-color);
     color: var(--button-active-color);
 }
+.projekts-button:hover {
+    cursor: pointer;
+}
 .projekts-list {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
-    flex-flow: row wrap;
     gap: 30px;
 }
 .projekts-item {
-    flex-basis: calc((100% - px) / 3);
+    box-sizing: border-box;
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #EEEEEE;
 }
 .projekts-item:hover {
     box-shadow: 1px 4px 6px 0px #00000029;
@@ -274,6 +277,10 @@ header {
 }
 .projekts-subtitle {
     text-align: left;
+    color: var(--title-color);
+}
+.projekts-filter {
+    color: var(--contact-text-color);
 }
 /*footer*/
 footer {
