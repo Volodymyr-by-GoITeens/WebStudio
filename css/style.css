@@ -93,7 +93,7 @@ header {
 /*hero*/
 .hero {
     background-color: var(--hero-bg-color);
-    background-image: url(../images/index/teamwork.jpg);
+    background-image: url(../images/index/hero/teamwork.jpg);
     background-image: linear-gradient(top to bottom, #2F303A66);
     background-position: contain;
     background-repeat: no-repeat;
