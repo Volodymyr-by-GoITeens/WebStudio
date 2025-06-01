@@ -89,6 +89,11 @@ header {
 .header-contact:active {
     color: var(--link-active-color);
 }
+.header-mailicon {
+    width: 16px;
+    height: 10px;
+    background-image: url(../images/icomoon/SVG/mail.svg);
+}
 
 /*hero*/
 .hero {
@@ -287,6 +292,38 @@ header {
 .projekts-filter {
     color: var(--contact-text-color);
 }
+
+/* clients */
+.clients {
+    padding: 94px 0;
+}
+.clients-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.clients-title {
+    font-family: var(--main-font);
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.clients-vector {
+    width: 106px;
+    height: 60px;
+    padding: 16px 32px;
+    fill: var(--contact-text-color);
+    border: 1px solid var(--contact-text-color);
+}
+.clients-vector:hover {
+    fill: var(--active-color);
+    border: 1px solid var(--active-color);
+}
+
 /*footer*/
 footer {
     background-color: var(--footer-bg-color);
