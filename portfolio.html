@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="images/fonts/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!--header-->
     <header class="header">
-        <div class="container">
-            <a class="header-logo" href="index.html">Web<span class="header-logo-span">Studio</span></a>
-            <nav class="header-nav">
-                <ul class="header-nav-list">
-                    <li class="header-item">
-                        <a class="header-link" href="index.html">Студія</a>
-                    </li>
-                    <li class="header-item">
-                        <a class="header-link" href="portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="header-item">
-                        <a class="header-link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="container header-container">
+            <div class="header-wrap">
+                <a class="header-logo" href="index.html">Web<span class="header-logo-span">Studio</span></a>
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-item">
+                            <a class="header-link" href="index.html">Студія</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-link" href="portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <ul class="header-address">
                 <li class="header-item">
                     <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="header-item">
-                    <a class="header-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="header-contact" href="tel:+380961111111"><div class="header-phoneicon"></div>+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -42,7 +45,7 @@
         <!--Кнопці-->
         <section class="projekts">
             <div class="container projekts-container">
-                <ul class="projekts-filters-list">
+                <ul class="projekts-filter-list">
                     <li class="projekts-filter-item">
                         <button class="projekts-button projekts-active-button" type="button">Усі</button>
                     </li>
@@ -67,8 +70,10 @@
                     <li  class="projekts-item">
                         <a class="projekts-link" href="">
                             <img class="projekts-img" src="./images/portfolio/tehnokriak.jpg" alt="Технокряк Проєкт">
-                            <h3 class="projekts-subtitle">Технокряк</h3>
-                            <p class="projekts-filter">Веб-сайт</p>
+                            <div class="projekts-wrap">
+                                <h3 class="projekts-subtitle">Технокряк</h3>
+                                <p class="projekts-filter">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
 
@@ -76,8 +81,10 @@
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
                             <img class="projekts-img" src="./images/portfolio/poster.jpg" alt="Постер New Orlean vs Golden Star Проєкт">
-                            <h3 class="projekts-subtitle">Постер New Orlean vs Golden Star</h3>
-                            <p class="projekts-filter">Дизайн</p>
+                            <div class="projekts-wrap">
+                                <h3 class="projekts-subtitle">Постер New Orlean vs Golden Star</h3>
+                                <p class="projekts-filter">Дизайн</p>
+                            </div>
                         </a>
                     </li>
 
@@ -85,8 +92,10 @@
                     <li class="projekts-item">
                          <a class="projekts-item_link" href="">
                             <img class="projekts-img" src="./images/portfolio/restaurant.jpg" alt="Ресторан Seafood Проєкт">
-                            <h3 class="projekts-subtitle">Ресторан Seafood</h3>
-                            <p class="projekts-filter">Додаток</p>
+                            <div class="projekts-wrap">
+                               <h3 class="projekts-subtitle">Ресторан Seafood</h3>
+                               <p class="projekts-filter">Додаток</p>
+                            </div>
                         </a>
                     </li>
 
@@ -94,8 +103,10 @@
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
                             <img class="projekts-img" src="./images/portfolio/headphones.jpg" alt="Проєкт Prime Проєкт">
-                            <h3 class="projekts-subtitle">Проєкт Prime</h3>
-                            <p class="projekts-filter">Маркетинг</p>
+                            <div class="projekts-wrap">
+                                <h3 class="projekts-subtitle">Проєкт Prime</h3>
+                                <p class="projekts-filter">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     
@@ -103,8 +114,10 @@
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
                             <img class="projekts-img" src="./images/portfolio/boxes.jpg" alt="Проєкт Boxes Проєкт">
-                            <h3 class="projekts-subtitle">Проєкт Boxes</h3>
-                            <p class="projekts-filter">Додаток</p>
+                            <div class="projekts-wrap">
+                                <h3 class="projekts-subtitle">Проєкт Boxes</h3>
+                                <p class="projekts-filter">Додаток</p>
+                            </div>
                         </a>
                     </li>
 
@@ -112,8 +125,10 @@
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
                             <img class="projekts-img" src="./images/portfolio/computer.jpg" alt="Inspiration has no Borders Проєкт">
-                            <h3 class="projekts-subtitle">Inspiration has no Borders</h3>
-                            <p class="projekts-filter">Веб-сайт</p>
+                            <div class="projekts-wrap">
+                                <h3 class="projekts-subtitle">Inspiration has no Borders</h3>
+                                <p class="projekts-filter">Веб-сайт</p>
+                            </div>
                         </a>
                     </li>
 
@@ -121,8 +136,10 @@
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
                             <img class="projekts-img" src="./images/portfolio/newsletter.jpg" alt="Видання Limited Edition Проєкт">
-                            <h3 class="projekts-subtitle">Видання Limited Edition</h3>
-                            <p class="projekts-filter">Дизайн</p>
+                            <div class="projekts-wrap">
+                                <h3 class="projekts-subtitle">Видання Limited Edition</h3>
+                                <p class="projekts-filter">Дизайн</p>
+                            </div>
                         </a>
                     </li>
 
@@ -130,8 +147,10 @@
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
                             <img class="projekts-img" src="./images/portfolio/labeltag.jpg" alt="Проєкт LAB Проєкт">
-                            <h3 class="projekts-subtitle">Проєкт LAB</h3>
-                            <p class="projekts-filter">Маркетинг</p>
+                            <div class="projekts-wrap">
+                                <h3 class="projekts-subtitle">Проєкт LAB</h3>
+                                <p class="projekts-filter">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
 
@@ -139,8 +158,10 @@
                     <li class="projekts-item">
                         <a class="projekts-link" href="">
                             <img class="projekts-img" src="./images/portfolio/business.jpg" alt="Growing Business Проєкт">
-                            <h3 class="projekts-subtitle">Growing Business</h3>
-                            <p class="projekts-filter">Додаток</p>
+                            <div class="projekts-wrap">
+                                <h3 class="projekts-subtitle">Growing Business</h3>
+                                <p class="projekts-filter">Додаток</p>
+                            </div>
                         </a>
                     </li>
                  </ul>
