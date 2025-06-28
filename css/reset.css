@@ -24,8 +24,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+.projekt-item {
+	box-sizing: border-box;
+}
 body {
+    padding: 0;
 	line-height: 1;
+	font-weight: 400;
+    margin: 0 auto;
+    display: block;
 }
 ol, ul {
 	list-style: none;
