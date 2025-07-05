@@ -155,17 +155,7 @@ header {
     display: flex;
     gap: 30px;
     flex-direction: row;
-}/*
-.special-item::before {
-    background-color: var(--team-bg-color);
-    background-image: url(../images/index/clients/symbol-defs.svg#icon-clock);
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    display: block;
-    content: "";
-}*/
+}
 .special-vector {
     background-color: var(--team-bg-color);
     width: 70px;
@@ -211,6 +201,25 @@ header {
     display: flex;
     gap: 30px;
     flex-direction: row;
+}
+.tasks-item  {
+    position: relative;
+}
+.tasks-desc {
+    font-family: var(--main-font);
+    color: var(--hero-title-color);
+    background-color: #2F303ACC;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0;
 }
 
 /*team*/
