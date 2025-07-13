@@ -59,29 +59,31 @@
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button type="button" class="modal-close-button" data-modal-close>
-                            img
+                            .
                         </button>
                         <h1 class="modal-headline">Залиште свої дані, ми вам передзвонимо</h1>
                         <form class="modal-form">
                             <label class="modal-label">
-                                Ім'я
+                                <p class="modal-subject">Ім'я</p>
                                 <input type="text" name="username" class="modal-input" required>
                             </label>
                             <label class="modal-label">
-                                Телефон
+                                <p class="modal-subject">Телефон</p>
                                 <input type="tel" name="tel" class="modal-input" required>
                             </label>
                             <label class="modal-label">
-                                Пошта
+                                <p class="modal-subject">Пошта</p>
                                 <input type="email" name="email" class="modal-input" required>
                             </label>
                             <label class="modal-label">
-                                Коментар
+                                <p class="modal-subject">Коментар</p>
                                 <textarea name="comment" placeholder="Введіть текст" rows="8" class="modal-comment" required></textarea>
                             </label>
                             <label class="modal-label">
                                 <input type="checkbox" name="contract" class="modal-checkbox">
-                                Погоджуюся з розсилкою та приймаю <a href="#" class="modal-contract">Умови договору</a>
+                                <p class="modal-contract">
+                                    Погоджуюся з розсилкою та приймаю <a href="#" class="modal-link"> Умови договору</a>
+                                </p>
                             </label>
                             <button type="submit" class="modal-submit-button">Відправити</button>
                         </form>

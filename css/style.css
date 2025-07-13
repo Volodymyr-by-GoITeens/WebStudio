@@ -164,7 +164,7 @@ header {
 .no-scroll {
   overflow: hidden;
 }
-
+/*modal*/
 .modal {
   background-color: var(--header-bg-color);
   top: 50%;
@@ -176,10 +176,16 @@ header {
   transform: translate(-50%, -50%);
   position: absolute;
 }
-.modal-button {
+.modal-close-button {
     position: absolute;
     top: 8px;
     right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    outline: 1px solid var(--clients-color);
+    border-radius: 100%;
+    cursor: pointer;
 }
 .modal-headline {
     font-family: var(--main-font);
@@ -193,6 +199,87 @@ header {
 .modal-form {
     display: flex;
     flex-direction: column;
+    padding-top: 12px;
+}
+.modal-label {
+    margin-bottom: 10px;
+}
+.modal-subject {
+    font-family: var(--main-font);
+    color: var(--contact-text-color);
+    text-align: start;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    margin-bottom: 4px;
+}
+.modal-input {
+    border: 1px solid #21212133;
+    font-family: var(--main-font);
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    padding: 11px 0;
+    box-sizing: border-box;
+}
+.modal-input:focus {
+    border-color: var(--active-color);
+}
+.modal-comment {
+    font-family: var(--main-font);
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    padding: 12px 16px;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+}
+.modal-comment:focus {
+    border-color: var(--active-color);
+}
+.modal-checkbox {
+    accent-color: var(--active-color);
+    border: 3px solid var(--title-color);
+    border-radius: 2px;
+    background-color: var(--title-color);
+    margin-top: 10px;
+}
+.modal-contract {
+    font-family: var(--main-font);
+    color: var(--contact-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    display: contents;
+}
+.modal-link {
+    text-decoration: underline;
+    color: var(--link-active-color);
+}
+.modal-submit-button {
+    background-color: var(--active-color);
+    font-family: var(--main-font);
+    color: var(--hero-title-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 6%;
+    border-radius: 4px;
+    padding: 10px 52px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    margin: 20px auto auto;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 /*special*/

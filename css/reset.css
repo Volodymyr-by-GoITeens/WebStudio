@@ -52,3 +52,7 @@ table {
 button {
 	border: none;
 }
+
+label input, label textarea {
+	outline: none;
+}
