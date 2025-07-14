@@ -22,6 +22,7 @@
     --clients-color: #AFB1B8;
     --media-second-color: #fff;
     --media-bg-color: #FFFFFF1A;
+    --modal-close-color: #000;
     --main-font: "Roboto", serif;
     --logo-font: "Raleway", serif;
 }
@@ -169,23 +170,37 @@ header {
   background-color: var(--header-bg-color);
   top: 50%;
   left: 50%;
+  box-sizing: border-box;
   min-width: 528px;
   min-height: 581px;
   padding: 40px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
   position: absolute;
+  box-shadow: 
+  0px 2px 1px 0px #00000033,
+  0px 1px 1px 0px #00000024,
+  0px 1px 3px 0px #0000001F;
+
 }
 .modal-close-button {
     position: absolute;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
     background-color: white;
-    outline: 1px solid var(--clients-color);
     border-radius: 100%;
     cursor: pointer;
+}
+.modal-vector {
+    fill: var(--modal-close-color);
+    outline: 1px solid var(--clients-color);
+    padding: 9px;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+}
+.modal-close-button:hover .modal-vector {
+    fill: var(--active-color);
 }
 .modal-headline {
     font-family: var(--main-font);
@@ -223,7 +238,7 @@ header {
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 1%;
-    padding: 11px 0;
+    padding: 11px 0 11px 42px;
     box-sizing: border-box;
 }
 .modal-input:focus {
@@ -453,6 +468,7 @@ header {
     padding: 16px 32px;
     fill: var(--clients-color);
     border: 1px solid var(--clients-color);
+    border-radius: 4px;
 }
 .clients-vector:hover {
     fill: var(--active-color);
@@ -612,12 +628,49 @@ footer {
     width: 20px;
     height: 20px;
 }
+.footer-subscribe {
+    text-align: start;
+}
 .footer-subscribe-title {
     font-family: var(--main-font);
     color: var(--hero-title-color);
     font-weight: 700;
+    padding-bottom: 20px;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 3%;
     text-transform: uppercase;
+}
+.footer-subscribe-input {
+    background-color: #2196F300;
+    border-radius: 4px;
+    padding: 15px 16px;
+    width: 279px;
+    border: 1px solid #FFFFFF4D;
+    box-shadow: 0px 4px 4px 0px #00000026;
+}
+.footer-subscribe-button {
+    background-color: var(--active-color);
+    box-shadow: 0px 4px 4px 0px #00000026;
+    font-family: var(--main-font);
+    color: var(--media-second-color);
+    padding: 10px 58px 10px 28px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 6%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.footer-subscribe-vector {
+    fill: var(--header-bg-color);
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    right: 28px;
+    flex-shrink: none;
+    position: absolute;
 }

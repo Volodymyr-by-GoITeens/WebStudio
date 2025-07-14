@@ -59,7 +59,9 @@
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button type="button" class="modal-close-button" data-modal-close>
-                            .
+                            <svg class="modal-vector">
+                                <use class="modal-symbol" href="./images/symbol-defs.svg#icon-close"></use>
+                            </svg>
                         </button>
                         <h1 class="modal-headline">Залиште свої дані, ми вам передзвонимо</h1>
                         <form class="modal-form">
@@ -80,7 +82,7 @@
                                 <textarea name="comment" placeholder="Введіть текст" rows="8" class="modal-comment" required></textarea>
                             </label>
                             <label class="modal-label">
-                                <input type="checkbox" name="contract" class="modal-checkbox">
+                                <input type="checkbox" name="contract" class="modal-checkbox" required>
                                 <p class="modal-contract">
                                     Погоджуюся з розсилкою та приймаю <a href="#" class="modal-link"> Умови договору</a>
                                 </p>
@@ -380,9 +382,20 @@
                     </ul>
                 </div>
             </div>
-                <div class="footer-subscribe">
-                    <h3 class="footer-subscribe-title">Підпишіться на розсилку</h3>
-                </div>
+            <div class="footer-subscribe">
+                <h3 class="footer-subscribe-title">Підпишіться на розсилку</h3>
+                <form class="footer-subscribe-form">
+                    <label class="footer-subscribe-label">
+                        <input type="email" name="email" class="footer-subscribe-input" required placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="footer-subscribe-button">
+                        Підписатися
+                        <svg class="footer-subscribe-vector">
+                            <use class="footer-subscribe-symbol" href="./images/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
