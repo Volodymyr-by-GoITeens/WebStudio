@@ -77,6 +77,15 @@ header {
 .active-site {
     color: var(--active-color);
 }
+.active-site::after {
+    content: "";
+    display: block;
+    margin-top: 28px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--active-color);
+}
 .header-link:hover {
     color: var(--link-active-color);
 }
@@ -526,9 +535,44 @@ header {
     0px 4px 4px 0px #0000000F,
     0px 1px 1px 0px #0000001F;
 }
+.projekts-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.projekts-overlay::before {
+    content: "";
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196F3E5;
+    display: block;
+    position: absolute;
+}
+.projekts-item:hover .projekts-overlay::before, .projekts-item:hover .projekts-overlay .projekts-desc {
+    opacity: 1;
+}
+.projekts-desc {
+    font-family: var(--main-font);
+    color: var(--hero-title-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3%;
+    top: 63px;
+    left: 24px;
+    right: 24px;
+    bottom: 63px;
+    opacity: 0;
+    position: absolute;
+}
 .projekts-img {
     max-width: 100%;
     display: block;
+    overflow: hidden;
 }
 .projekts-wrap {
     padding: 20px 24px;
