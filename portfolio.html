@@ -259,9 +259,20 @@
                     </ul>
                 </div>
             </div>
-                <div class="footer-subscribe">
-                    <h3 class="footer-subscribe-title">Підпишіться на розсилку</h3>
-                </div>
+            <div class="footer-subscribe">
+                <h3 class="footer-subscribe-title">Підпишіться на розсилку</h3>
+                <form class="footer-subscribe-form">
+                    <label class="footer-subscribe-label">
+                        <input type="email" name="email" class="footer-subscribe-input" required placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="footer-subscribe-button">
+                        Підписатися
+                        <svg class="footer-subscribe-vector">
+                            <use class="footer-subscribe-symbol" href="./images/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     

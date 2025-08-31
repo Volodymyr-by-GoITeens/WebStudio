@@ -129,8 +129,7 @@ header {
 
 /*hero*/
 .hero {
-    background-image: linear-gradient(top to bottom, #2F303A66, #2F303A66);
-    background-image: url(../images/index/hero/teamwork.jpg);
+    background-image: linear-gradient(top to bottom, #2F303A66, #2F303A66), url(../images/index/hero/teamwork.jpg);
     background-color: var(--hero-bg-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -326,14 +325,15 @@ header {
     gap: 30px;
     flex-direction: row;
 }
-.special-vector {
-    background-color: var(--team-bg-color);
-    width: 70px;
-    height: 70px;
-    flex-shrink: 0;
-    padding: 25px 100px;
-    border-radius: 4px;
+.special-item::before {
+    content: "";
+    width: 270px;
+    height: 120px;
     margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../images/index/special/symbol-defs.svg#icon-diagram);
+    background-color: var(--button-bg-color);
+    display: block;
 }
 .special-headline {
     font-family: var(--main-font);
@@ -521,8 +521,9 @@ header {
     text-align: center;
     border-radius: 4px;
     padding: 6px 22px;
+    transition: box-shadow background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projekts-button:hover {
+.projekts-filter-item:hover .projekts-button {
     box-shadow:
     0px 2px 2px 0px #0000001F,
     0px 1px 2px 0px #00000014,
