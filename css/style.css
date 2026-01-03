@@ -572,14 +572,11 @@ header {
     0px 4px 4px 0px #0000000F,
     0px 1px 1px 0px #0000001F;
 }
-.projekts-link {
-    position: relative;
-}
 .projekts-overlay {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
 }
 .projekts-overlay::before {
     content: "";
