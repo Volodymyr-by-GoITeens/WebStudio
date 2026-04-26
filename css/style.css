@@ -78,6 +78,9 @@ header {
 }
 .header-link:hover {
     color: var(--link-active-color);
+    animation: pulse;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-out;
 }
 .active-site {
     color: var(--active-color);
@@ -761,6 +764,9 @@ footer {
     text-align: center;
     cursor: pointer;
     vertical-align: middle;
+    animation: swing;
+    animation-duration: 800ms;
+    animation-timing-function: ease-out;
 }
 .footer-subscribe-vector {
     fill: var(--header-bg-color);
