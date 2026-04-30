@@ -408,6 +408,9 @@ header {
 }
 .tasks-item  {
     position: relative;
+    animation: tada;
+    animation-timing-function: linear;
+    animation-duration: 800ms;
 }
 .tasks-desc {
     font-family: var(--main-font);
